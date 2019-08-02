@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import APOD from "./components/APOD";
-import Headline from "./components/Headline";
 
 function App() {
   const [nasaPic, setNasaPic] = useState({});
@@ -19,7 +18,6 @@ function App() {
 
   return (
     <>
-      <Headline />
       <APOD
         title={nasaPic.title}
         date={nasaPic.date}
